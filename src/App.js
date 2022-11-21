@@ -2,52 +2,47 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className='w-full h-full min-h-screen bg-gradient-to-br from-red-600 to-red-500 text-gray-100'>
-      <div className='container w-full max-w-6xl h-full min-h-screen mx-auto flex items-center justify-between flex-col'>
+    <div className='container h-full min-h-screen mx-auto flex items-center justify-between flex-col px-8'>
+      <div></div>
 
-        {/* content */}
-        <div className='text-center font-bold max-w-4xl my-52'>
-          <h1 className='font-lato text-4xl'>Under Construction</h1>
+      {/* content */}
+      <div className='text-center font-bold max-w-4xl py-52'>
+        <h1 className='font-extrabold text-5xl sm:text-6xl md:text-7xl text-white'>COMING SOON</h1>
 
-          <h2 className='pt-8 text-2xl'>Our website is currently under construction.</h2>
+        <h2 className='pt-8 text-2xl text-gray-200 font-bold'>My website is currently under construction.</h2>
 
-          <p className='pt-4 text-xl'>You can reach us via Whatsapp and E-Mail by clicking the buttons below or you can follow our social media accounts at the bottom of the page.</p>
+        <p className='pt-4 text-xl text-gray-200'>You can reach me at the e-mail address below or follow me on social media to follow the developments.</p>
 
-          {/* Contact Buttons */}
-          <div className='pt-10 text-3xl'>
-            <a href='tel:+909999999999' className='mr-8 hover:text-black duration-300'>
-              <i className="fa-solid fa-phone" />
-            </a>
-
-            <a href='mailto:youremail@yourdomain.com' className='text-white hover:text-black duration-300'>
-              <i className="fa-solid fa-envelope" />
-            </a>
-          </div>
-        </div>
-
-        {/* footer - cr */}
-        <footer className='flex items-center justify-between w-full max-w-full text-gray-200'>
-          {/* copyright */}
-          <span className='font-lato'>
-            &copy; Copyright 2022. All rights reserved.
-          </span>
-
-          {/* social media buttons */}
-          <span className='flex items-center justify-between w-24 text-xl'>
-            <a href='www.latform.com/youraccounts' className='hover:text-black duration-300'>
-              <i className="fa-brands fa-linkedin" />
-            </a>
-
-            <a href='www.latform.com/youraccounts' className='hover:text-black duration-300'>
-              <i className="fa-brands fa-facebook" />
-            </a>
-
-            <a href='www.latform.com/youraccounts' className='hover:text-black duration-300'>
-              <i className="fa-brands fa-instagram" />
-            </a>
-          </span>
-        </footer>
+        <a href='mailto:contact@alipolat.tech' title='contact@alipolat.tech' target={'_blank'} rel="noopener noreferrer" className='text-white mt-4 hover:text-fuchsia-500 duration-300 block text-xl'>
+          contact@alipolat.tech
+        </a>
       </div>
+
+      {/* footer - cr */}
+      <footer className='flex items-baseline justify-between w-full flex-wrap sm:flex-row-reverse text-gray-200 pb-2'>
+        {/* social media buttons */}
+        <span className='flex justify-between w-24 text-xl text-center'>
+          <a href='https://tr.linkedin.com/in/-alipolat' title='__alipolat' target={'_blank'} rel="noopener noreferrer" className='text-white hover:text-fuchsia-500 duration-300 mr-1'>
+            <i className="fa-brands fa-linkedin" />
+          </a>
+
+          <a href='https://twitter.com/_alipolat' title='_alipolat' target={'_blank'} rel="noopener noreferrer" className='text-white hover:text-fuchsia-500 duration-300 mr-1'>
+            <i className="fa-brands fa-twitter" />
+          </a>
+
+          <a href='https://www.instagram.com/__alipolat/' title='Ali POLAT' target={'_blank'} rel="noopener noreferrer" className='text-white hover:text-fuchsia-500 duration-300 mr-1'>
+            <i className="fa-brands fa-instagram" />
+          </a>
+        </span>
+
+        {/* copyright */}
+        <span className='mt-4'>
+          <a href='https://alipolat.tech' title='alipolat.tech' target={'_blank'} rel="noopener noreferrer" className='text-white mt-4 hover:text-fuchsia-500 duration-300 mr-1'>
+            Ali POLAT
+          </a>
+          &copy; Copyright 2022. All rights reserved.
+        </span>
+      </footer>
     </div>
   )
 }
